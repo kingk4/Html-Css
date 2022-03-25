@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Payment😮
+    </title>
+    <head>
+        <link rel="is stylesheet" type="text/css" href="C:/Users/KING/Desktop/htmlCss/fontCss/all.css" />
+        <meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+    
+        </meta>
+            <style>
+                
+                .container{
+                    background-color:lightgray;
+                }
+
+                .fieldset{
+                    height:1000px;
+                    width: 1216.5px;
+                    border-radius: 1%;
+                    
+                }
+
+                .h1{
+                    text-align: center;
+                    font-family:Smokum ;
+                    
+                }
+
+                .h11{
+
+                    font-family:Smokum ;
+                }
+                #username{
+                    width: 98%;
+                }
+
+                .p1{
+                    font-weight: bold;
+                }
+
+                #field{
+                    width:96.8%
+                }
+                #Address{
+                    height: 60px;
+                    width: 98.7%;
+                }
+                .addr{
+                    margin-top: 1%;
+                }
+                #email{
+                    margin-top: -1.4%;
+                    width:98.4%;
+                }
+
+                #pincode{
+                    width: 99.3%;
+                }
+                .h22{
+                    font-family:Smokum ;
+                }
+
+                #card_type{
+                    width: 99.2%;
+                }
+                
+                #Expirationdate{
+                    width: 98.8%;
+                }
+                .fa-cc-mastercard{
+                    color: orange;
+                    font-size: 40px;
+                }
+                #card_number{
+                    width: 98.3%;
+                }
+                #cvv{
+                    width: 98.3%;
+                }
+                .fa-cc-visa{
+                    color:blue;
+                    font-size: 40px;
+                }
+                
+                .fa-cc-paypal{
+                    font-size: 40px;
+                }
+                #submit{
+                    color:green;
+                    text-align: center;
+                    width: 99%;
+                    font-weight: bold;
+                
+                }
+
+                
+                
+            </style>
+
+
+    
+    </head>
+    <body>      
+        <div class="container"> 
+        <fieldset class="fieldset">      
+        <h1 class="h1"> 
+            Payment Form💲 
+        </h1> 
+        <hr> </hr>
+        
+        <h1 class="h11">
+            User Information
+        </h1>
+        <form> 
+            <p class="p1">
+                Username <br/>
+                &nbsp;<input type="text" id="username" placeholder="john" required /> <br/>
+        
+                <fieldset id="field">        
+                <legend> <b>Gender</b></legend>
+                <input type="radio" id="gender" name="n1" />Male
+                &nbsp;&nbsp;&nbsp;<input type="radio" id="gender" name="n1" required />Female
+                </fieldset>
+                <br/>
+                <b>Age</b> <input type="number" id="age" min="18" max="60" required placeholder="18+" required /> &nbsp; &nbsp; &nbsp; &nbsp; <b>DOB <input type="date" required />
+                <br/> 
+                <p class="addr"> <b>Address</b> <br/>
+                <textarea id="Address" placeholder="Enter your Address" required></textarea> </p> 
+                    
+                <p> <b>Email</b><br/>
+                <input type="email" required placeholder="123@gmail.com" id="email" >
+                </p>
+
+                <p id="pincode" > <b>Pincode</b><br/>
+                <input type="number" placeholder="12345" required  id="pincode">
+                </p>
+            </p>
+            
+            </p>
+        </form>
+
+        <h1 class="h22">
+            Payment Information
+        </h1>
+            <p class="card">Accepted card </p> 
+            <div class="master">
+                <i class="fa-brands fa-cc-mastercard"></i> &nbsp; &nbsp; <i class="fa-brands fa-cc-visa"></i>  &nbsp; &nbsp; <i class="fa-brands fa-cc-paypal"> </i>  
+            </div>
+            <br/>
+            <form>
+                Creditcard <br/>
+                <select name= Cardtype id="card_type" required >
+                    <option value="">--Select a card Type__</option> <br/>
+                    <option value="visa">Visa</option> 
+                    <option value="Master">Mastercard</option>
+                    <option value="Paypal"> Paypal</option></select>
+                <br/>
+                <br/>
+                
+            
+                Expiratiom Date<br/>
+                <input type="date" required id="Expirationdate" />
+                <br/>
+                <br/>
+                Card Number<br/>
+                <input type="number" placeholder="2222-4444-6666-1111" required  id="card_number"/> <br/>
+                <br/>
+                Cvv<br/>
+                <input type="number" placeholder="222" required  id="cvv"/>
+                <br/> <br/> <br/>
+                <input id="submit" type="submit" value="Paynow"  required/>
+            </fieldset>
+        </div>
+
+    </body>
+</html>
