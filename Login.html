@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login </title>
+    <style>
+      .logo{
+        width: 38%;
+        height: 15%;
+        padding-left: 30%;
+
+    }
+     form {
+        /* background-color: #fff; */
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 20px;
+        
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        color: rgb(77, 75, 75);
+      }
+      
+      
+      input[type="text"], select, input[type="email"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 100%;
+      }
+      
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .hr{
+        width: 70%;
+      }
+
+
+
+    </style>
+  </head>
+  <body background="images\background.jpg">
+
+    <form>
+        
+      <img class="logo" src="images\logo.png"  width="300" height="300">
+      
+      <hr class="hr">
+
+      <h1>
+        Login
+      </h1>
+       
+      <label for="workemail">Work Email:</label>
+      <input type="email" name="workemail" ></input>
+      
+      <input type="submit" value="Continue">
+
+      <label for="license">
+        <input type="checkbox" id="license" name="license" required>
+        I have read and agree to the terms
+    </form>
+  </body>
+  <script src="javascript.js"></script>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Free Trial  Bright Data</title>
+
+    <style>
+      .logo{
+        width: 38%;
+        height: 15%;
+        padding-left: 30%;
+
+    }
+     form {
+        /* background-color: #fff; */
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 20px;
+        
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        color: rgb(77, 75, 75);
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color:rgb(68, 67, 67)
+      }
+      
+      input[type="text"], select, input[type="email"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 100%;
+      }
+      
+      select {
+        appearance: none;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 5'%3E%3Cpath fill='%23ccc' d='M5 5L0 0h10z'/%3E%3C/svg%3E");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 10px 5px;
+        padding-right: 30px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .hr{
+        width: 70%;
+      }
+      a[href="Login.html"]:hover{
+          color: blue;
+      }
+      .p{
+        padding-right: 10%;
+      }
+    </style>
+  </head>
+  <body background="images\background.jpg">
+
+    <form name = "myForm" onsubmit = "return validate()">
+        
+      <img class="logo" src="images\logo.png"  width="300" height="300">
+      <hr class="hr">
+
+      <h1>
+        Free Trial SignUp
+      </h1>
+      
+      <label for="firstname" >First Name: </label>
+      <input type="text"  name="firstname" ></input>
+      
+      <label for="lastname">Last Name:</label>
+      <input type="text" name="lastname" ></input>
+      
+      <label for="company-size">Company Size:</label>
+      <select id="company-size" name="company-size">
+        <option value="">--Select--</option>
+        <option value="1-10">1-10</option>
+        <option value="11-50">11-50</option>
+        <option value="51-100">51-100</option>
+        <option value="101+">101+</option>
+      </select>
+      
+      <label for="workemail">Work Email:</label>
+      <input type="email" name="workemail" ></input>
+      
+      <input type="submit" value="SingUp"></input>
+       <p>Already have an account? <a href="Login.html">Login here</a></p>
+   
+      <label for="license">
+        <input type="checkbox" id="license" name="license" >
+        I have read and agree to the terms
+    </form>
+  </body>
+<script src="javascript.js"></script>
+
+  
+</html>
